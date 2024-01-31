@@ -1,0 +1,48 @@
+Aula 1 sobre Git
+Acesso em 07-10-2023 às 19 horas
+ https://youtu.be/FV-hMoqHtcU?list=PLi75dzoFwEbp0YlIkrQVyLta2ou0ZG6iT&t=183
+ Ver também o link abaixo acessado em 14-10-2023 às 18h45min
+ https://youtu.be/kB5e-gTAl_s
+ 
+ Criar uma pasta e dentro da pasta dar o comando:
+ git init	- comando para criar uma pasta oculta .git para gerenciar as versões
+ code . (esse comando é para abrir o VS code)
+ No VS code eu crio o meu programa.
+ git status	- comando para ver o status do git, como ele está
+ git add	- comando para registrar um programa ao gerenciamento do git
+ git add .	- comando para registrar varios programas de uma vez ao gerenciamento do git
+ git add *	- comando para registrar varios programas de uma vez ao gerenciamento do git
+ git commit -m "comentario sobre a modificação ou registro na nuvem"		- comando para dizer ao git para registra de modo definitivo aquele programa/versão, entre aspa coloca-se um comentário para lembrar algum detalhe no futuro.
+ 
+ Na primeira vez que você digitar o comando git commit -m o programa irá pedir para você configurar seus dados para vincular ao arquivo como segue abaixo:
+ 
+ git config --global user.email "you@example.com"
+ git config --global user.name "Your Name"
+		to set your account's default identity.
+Omit --global
+		to set the identity only in this repository.
+git log 	- comando para ver os arquivos que foram para nuvem
+
+git remote add <name> <url> 	- comando para indicar onde deve enviar as versões dos programa salvas no computador para o github (nuvem), o name é na verdade o nome do repositório e não o nome do programa
+git push -u origen master	- comando para enviar a versão para github (nuvem)
+git branch <nome do novo branch>	- comando para criar um novo branch
+git checkout <nome do branch criado>	- comando para mudar o branch atual
+git reflog	- comando para ver as versões já salvas (histórico das versões)
+git reset --hard <nº da versão dada ao arquivo quando esse foi enviado para nuvem, este número é visto quando dá o comando git reflog, você pega o nº da versão que você quer retornar.
+git branch	- comando para ver as branch ativas no momento, se houver mais de uma a que estiver com asterisco é a que o git estará abastecendo com os programa salvos na nuvem
+git branch <nome da nova branch, geralmente dão o nome staging>	- comando para criar uma nova branch
+git checkout <nome da outra branch>	- comando para mudar de branch
+git merge <nome da branch que queremos carregar> 	- comando para unir duas branch. Quando estamos trabalhando com duas branch e queremos que as informações de um delas vá para a outra primeiro tornamos a que vai recebe os comando como principal( usamos o comando git checkout <nome da branch> e depois o comando git merge <nome da branch que queremos buscar as informações> 
+git checkout -b <nome da nova branch> master	- comando que cria e muda a branch principal para a nova branch criada
+
+No caso em que a nossa pasta contenha uma arquivo que não poderá subir para nuvem, devemos neste caso criar um arquivo chamado .gitignore (podemos criá-lo usando o comando touch .gitignore). Dentro deste arquivo ( esse arquivo pode ser aberto com notepad) escrevemos o nome do arquivo que não deve subir para nuvem
+
+
+
+
+token_outubro
+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
+
+
+ 
+
