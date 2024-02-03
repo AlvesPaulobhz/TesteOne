@@ -40,8 +40,6 @@ No caso em que a nossa pasta contenha uma arquivo que não poderá subir para nu
 
 
 
-token_outubro
-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
 
 
  
